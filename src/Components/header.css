@@ -1,0 +1,25 @@
+/* Navbar  */
+.navbar-custom {
+  background-color: #1e1e1e;  
+}
+
+/* Liens de la navbar */
+.navbar .nav-link {
+  color: #fdf7f7a1; /* Couleur des liens non actifs */
+  font-weight: 600;
+}
+
+/* Lien actif */
+.navbar .nav-link.active {
+  color: #FFFFFF; /* Lien actif en blanc */
+}
+
+/* Styles du burger */
+.navbar-toggler {
+ font-size: 30px;            
+  color: #EEE;                  
+  border: 5px solid #EEE;  
+  background-color: #1e1e1e;
+  border-radius: 20%;
+  
+}
