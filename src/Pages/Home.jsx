@@ -3,7 +3,10 @@ import React from "react";
 const  Home = () => {
   return (
     <div className="text-primary" >
-    <h1>hjkhjk</h1>
+      <section id="about">
+        <p>jkjlkjlkjlkjlkjl</p>
+
+      </section>
     </div>
   );
 }

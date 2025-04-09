@@ -7,6 +7,7 @@ const  Blog = () => {
     <div>
 
 <h1>Blog</h1>
+<div style={{ height: "2000px" }}></div>
 
     </div>
    
