@@ -18,7 +18,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
         <Route path="legalnotice" element={<LegalNotice />} />
-        <Route path="*" element={<h1>404 - Page non trouvée</h1>} />
+        <Route path="*" element={<Error />} />
       </Route>
     </Routes>
   );
