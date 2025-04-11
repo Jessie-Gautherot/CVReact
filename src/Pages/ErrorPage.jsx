@@ -1,6 +1,6 @@
 import React from "react";
 
-const Error = () => {
+const ErrorPage = () => {
 return (
   <div className="container d-flex">
     <h1>Cette page n'existe pas</h1>
@@ -8,4 +8,4 @@ return (
 )
 }
 
-export default Error
+export default ErrorPage

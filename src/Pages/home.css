@@ -1,0 +1,28 @@
+.home-container {
+  min-height: 90vh;
+}
+
+#about {
+  background-color: rgb(224, 220, 213);
+ margin: 50px 50px 60px 50px;
+ padding: 50px;
+  
+}
+
+img.object-cover {
+  object-fit: cover;
+}
+
+
+.overlay {
+  opacity: 30%;
+  z-index: 1;
+}
+
+.style-width-90 {
+  width: 90%;
+}
+
+.border-bottom {
+  border-bottom-width: 4px solid;
+}

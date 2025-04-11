@@ -3,7 +3,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-eee d-flex flex-column ">
+    <footer className="footer d-flex flex-column ">
       <div className="container py-5">
         <div className="row">
           {/* Colonne 1 */}
@@ -16,13 +16,13 @@ const Footer = () => {
             </div>
             <div className="social-links">
               <a href="https://github.com/JohnDoe" target="_blank" rel="nofollow noreferrer">
-                <i className="fab fa-github fa-2x"></i>
+                <i className="fab fa-github fa-2x text-dark ms-3"></i>
               </a>
               <a href="https://twitter.com/JohnDoe" target="_blank" rel="nofollow noreferrer">
-                <i className="fab fa-twitter fa-2x"></i>
+                <i className="fab fa-twitter fa-2x text-dark ms-3"></i>
               </a>
               <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="nofollow noreferrer">
-                <i className="fab fa-linkedin fa-2x"></i>
+                <i className="fab fa-linkedin fa-2x text-dark ms-3"></i>
               </a>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
       <div className="container-fluid bg-dark text-white d-flex justify-content-center align-items-center py-3">
         <p className="mb-0">© Designed by John Doe</p>
-        <a href="#top" className="back-to-top" id="backToTop" style={{ display: "none" }}>
+        <a href="#top" className="ms-3 text-white" id="backToTop" style={{ display: "none" }}>
           Haut de page
         </a>
       </div>
