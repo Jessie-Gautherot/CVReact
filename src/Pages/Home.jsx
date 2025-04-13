@@ -21,7 +21,7 @@ const Home = () => {
       </section>
 
       {/* Section About */}
-      <section id="about" className="container d-flex flex-row bg-white shadow ">
+      <section id="about" className="container my-4 mx-auto p-5 bg-white shadow mt-5 mb-5 ">
         <div className="row">
           {/* Première colonne*/}
           <div className="col-12 col-md-6">
