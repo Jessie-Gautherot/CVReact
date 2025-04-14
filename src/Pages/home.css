@@ -2,17 +2,9 @@
   min-height: 90vh;
 }
 
-#about {
-  background-color: #EEE
- /* margin: 50px 50px 60px 50px; */
- /* padding: 50px; */
-  
-}
-
 img.object-cover {
   object-fit: cover;
 }
-
 
 .overlay {
   opacity: 30%;
@@ -25,4 +17,8 @@ img.object-cover {
 
 .border-bottom {
   border-bottom-width: 4px solid;
+}
+
+.btn {
+  background-color: #0d6efd;
 }

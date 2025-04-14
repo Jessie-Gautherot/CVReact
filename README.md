@@ -28,7 +28,7 @@ npm start
 ```
 
 Le projet sera accessible à l'adresse suivante :  
-[http://localhost:3000](http://localhost:3000)
+(http://localhost:3000)
 
 ## 🛠️ Technologies utilisées
 

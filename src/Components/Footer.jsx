@@ -3,7 +3,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer d-flex flex-column ">
+    <footer className="footer d-flex flex-column bg-light">
       <div className="container py-5">
         <div className="row">
           {/* Colonne 1 */}

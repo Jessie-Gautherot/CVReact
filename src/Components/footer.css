@@ -1,6 +1,5 @@
 .footer {
   padding-bottom: 15px;
-  background-color: #EEE;
 }
 
 .list-unstyled a::before  {
@@ -17,14 +16,13 @@
   padding-left: 10px;
 }
 
-
 a:hover {
   color: #444;
 }
 
-.bgeee {
-  background-color: #EEE;
-}
+
+
+
 
 
 

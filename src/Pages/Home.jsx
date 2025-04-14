@@ -4,22 +4,19 @@ import "./home.css";
 const Home = () => {
   return (
     <>
-      <section className="home-container position-relative text-white text-center d-flex justify-content-center align-items-center">
-        
-        {/* Première image du dessus */}
-        <picture className="position-absolute top-0 start-0 w-100 h-100 z-0">
-          <source srcSet="/hero-bg.jpg" media="(min-width: 992px)" />
-          <source srcSet="/hero-bg-tablette.jpg" media="(min-width: 768px)" />
-          <img src="/hero-bg-mobile.jpg"alt="image de fond"className="w-100 h-100 object-cover"/>
-        </picture>
-        <div className="position-relative z-2">
-          <h1 className="display-2 text-white">Bonjour, je suis John Doe</h1>
-          <h2 className="display-5 text-white">Développeur web full stack</h2>
-          <a href="#about" className="btn btn-primary mt-3 text-white">En savoir plus</a>
-        </div>
-        <div className="overlay position-absolute top-50 start-0 w-100 h-50 bg-dark"></div>
-      </section>
-
+     <section className="home-container position-relative text-white text-center d-flex justify-content-center align-items-center">
+  <picture className="position-absolute top-0 start-0 w-100 h-100 z-0">
+    <source srcSet="/hero-bg.jpg" media="(min-width: 992px)" />
+    <source srcSet="/hero-bg-tablette.jpg" media="(min-width: 576px)" />
+    <img src="/hero-bg-mobile.jpg" alt="image de fond" className="w-100 h-100 object-cover" />
+  </picture>
+  <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30 z-1"></div>
+  <div className="position-relative z-2 text-center p-4">
+    <h1 className="display-2 mb-3 text-white ">Bonjour, je suis John Doe</h1>
+    <h2 className="display-5 mb-4 text-white">Développeur web full stack</h2>
+    <a href="#about" className="btn btn-primary btn-lg">En savoir plus</a>
+  </div>
+</section>
       {/* Section About */}
       <section id="about" className="container my-4 mx-auto p-5 bg-white shadow mt-5 mb-5 ">
         <div className="row">
@@ -40,10 +37,8 @@ const Home = () => {
               j'accorde une attention particulière à la qualité du code que j'écris et je
               respecte les bonnes pratiques du web.
             </p>
-           
           </div>
-
-          {/* Deuxième Colonne Photo */}
+          {/* Deuxième Colonne */}
           <div className="col-12 col-md-6 d-flex flex-column align-items-start gap-3">
             <picture className="w-100">
               <source srcSet="/about-tab.jpg" media="(min-width: 768px)" />

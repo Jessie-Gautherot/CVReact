@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import BlogCard from "../Components/BlogCard";
 
 export default function Blog() {
-  useEffect(() => {
-    document.title = "Mon blog - John Doe";
-  }, []);
+
 
   return (
     <div>
