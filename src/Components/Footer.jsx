@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
@@ -31,11 +32,12 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <h5>Liens utiles</h5>
             <ul className="list-unstyled">
-              <li><a href="/">Accueil</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Me contacter</a></li>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="/LegalNotice">Mentions Légales</a></li>
+              <li><Link to="/">Accueil</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/contact">Me contacter</Link></li>
+              <li><Link to="#about">À propos</Link></li>
+              <li><Link to="/LegalNotice">Mentions Légales</Link></li>
+              <li><Link to="/github-profile">Profil GitHub</Link></li> {/* profile Githug ajouté ici */}
             </ul>
           </div>
 
@@ -43,9 +45,9 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <h5>Mes dernières réalisations</h5>
             <ul className="list-unstyled">
-              <li><a href="/works">Fresh Food</a></li>
-              <li><a href="/works">Restaurant Akira</a></li>
-              <li><a href="/works">Espace bien-être</a></li>
+              <li><Link to="/works">Fresh Food</Link></li>
+              <li><Link to="/works">Restaurant Akira</Link></li>
+              <li><Link to="/works">Espace bien-être</Link></li>
             </ul>
           </div>
 
@@ -53,9 +55,9 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <h5>Mes derniers articles</h5>
             <ul className="list-unstyled">
-              <li><a href="/blog">Coder son site en HTML/CSS</a></li>
-              <li><a href="/blog">Vendre ses produits sur le web</a></li>
-              <li><a href="/blog">Se positionner sur Google</a></li>
+              <li><Link to="/blog">Coder son site en HTML/CSS</Link></li>
+              <li><Link to="/blog">Vendre ses produits sur le web</Link></li>
+              <li><Link to="/blog">Se positionner sur Google</Link></li>
             </ul>
           </div>
         </div>
@@ -71,3 +73,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

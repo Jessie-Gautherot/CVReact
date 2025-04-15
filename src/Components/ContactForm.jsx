@@ -53,7 +53,9 @@ export default function ContactForm() {
         </textarea>
         {errors.message && <div className="invalid-feedback">{errors.message.message}</div>}
       </div>
-      <button type="submit" className="btn btn-primary">Envoyer</button>
+      <div className="d-flex justify-content-center">
+        <button type="submit" className="btn btn-primary rounded">Envoyer</button>
+      </div>
     </form>
   )
 }
