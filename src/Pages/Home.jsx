@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.css";
 
 const Home = () => {
+  useEffect(() => {
+      document.title = "John Doe - Accueil"
+  },[])
   return (
     <>
-     <section className="home-container position-relative text-white text-center d-flex justify-content-center align-items-center">
-  <picture className="position-absolute top-0 start-0 w-100 h-100 z-0">
-    <source srcSet="/hero-bg.jpg" media="(min-width: 992px)" />
-    <source srcSet="/hero-bg-tablette.jpg" media="(min-width: 576px)" />
-    <img src="/hero-bg-mobile.jpg" alt="image de fond" className="w-100 h-100 object-cover" />
-  </picture>
-  <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30 z-1"></div>
-  <div className="position-relative z-2 text-center p-4">
-    <h1 className="display-2 mb-3 text-white ">Bonjour, je suis John Doe</h1>
-    <h2 className="display-5 mb-4 text-white">Développeur web full stack</h2>
-    <a href="#about" className="btn btn-primary btn-lg">En savoir plus</a>
+  <section className="home-container position-relative text-white text-center d-flex justify-content-center align-items-center">
+    <picture className="position-absolute top-0 start-0 w-100 h-100 z-0">
+      <source srcSet="/hero-bg.jpg" media="(min-width: 992px)" />
+      <source srcSet="/hero-bg-tablette.jpg" media="(min-width: 576px)" />
+      <img src="/hero-bg-mobile.jpg" alt="image de fond" className="w-100 h-100 object-cover" />
+    </picture>
+    <div className="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-30 z-1"></div>
+    <div className="position-relative z-2 text-center p-4">
+      <h1 className="display-2 mb-3 text-white ">Bonjour, je suis John Doe</h1>
+      <h2 className="display-5 mb-4 text-white">Développeur web full stack</h2>
+      <a href="#about" className="btn btn-primary btn-lg">En savoir plus</a>
   </div>
 </section>
       {/* Section About */}
@@ -22,7 +25,7 @@ const Home = () => {
         <div className="row">
           {/* Première colonne*/}
           <div className="col-12 col-md-6">
-            <h2 className="border-bottom border-primary pb-3">A propos</h2>
+            <h2 className="border-bottom border-primary border-2 pb-3">A propos</h2>
             <p className="fs-5">
               Passionné par l'informatique et les nouvelles technologies, 
               j'ai suivi une formation d'<strong> intégrateur-developpeur web</strong> au CEF.

@@ -5,7 +5,7 @@ export default function LegalNotice() {
         <div className="container mt-3">
           <div className="text-center">
             <h2 className="text-uppercase">Mentions légales</h2>
-          <div className="border-bottom w-25 m-auto border-3 border-primary"></div>
+          <div className="border-bottom w-25 m-auto border-4 border-primary"></div>
         </div>
 
         <div className="accordion my-5 rounded">

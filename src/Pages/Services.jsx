@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Services() {
+   useEffect(() => {
+      document.title = "John Doe - Mes services"
+  },[])
   
   return (
     <div>
-      <div className="container-fluid banner"></div>
+      <div className="container-fluid banner p-0">
       <picture>
         <source srcSet="/banner/banner.jpg" media="(min-width: 992px)"></source>
         <source srcSet="/banner/banner-tablette.jpg" media="(min-width: 768px)" ></source>
         <img src="/banner/banner-mobile.jpg"alt="image de fond"/>
       </picture>
+      </div>
       <div className="container mt-5">
         <div className="text-center">
           <h2 className="text-uppercase">mon offre de services</h2>
           <p>Voici les prestations sur lesquelles je peux intervenir</p>
-          <div className="border-bottom border-primary w-25 m-auto border-3 mb-5"></div>
+          <div className="border-bottom border-primary w-25 m-auto border-4 mb-5"></div>
         </div>
       </div>
       {/* Cards Services */}
