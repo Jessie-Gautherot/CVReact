@@ -50,7 +50,7 @@ const RealisationsCard = () => {
       {/* Modale*/}
       {currentArticle && (
         <div className="modal fade show d-block" tabIndex="-1" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc" id="article-modal" style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
-          <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-dialog modal-dialog-centered mw-100 mx-3 mx-md-auto" role="document">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="modal-title">
@@ -59,7 +59,7 @@ const RealisationsCard = () => {
                 <button type="button"className="btn-close"aria-label="Fermer la modale" onClick={() => setCurrentArticle(null)}></button>
               </div>
               <div className="modal-body" id="modal-desc">
-                <img src={currentArticle.img.src} alt={currentArticle.img.alt} className="img-fluid mb-3"/>
+                <img src={currentArticle.img.src} alt={currentArticle.img.alt} className="img-fluid mb-3 w-50"/>
                 <p>{currentArticle.desc}</p>
                 <p>Le site a été créé {currentArticle.techno}.</p>
               </div>

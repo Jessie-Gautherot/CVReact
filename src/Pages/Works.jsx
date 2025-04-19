@@ -1,12 +1,16 @@
 import React, { useEffect } from "react";
 import RealisationsCard from "../Components/RealisationsCard";
+import { Helmet } from "react-helmet";
 
 export default function Realisations() {
-  useEffect(() => {
-    document.title = "John Doe - Mes réalisations"
-},[])
   
   return (
+    <>
+    <Helmet>
+        <title>Mes réalisations, John Doe</title>
+        <meta name="description" content="Découvrez les réalisations de John Doe, developpeur web." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
     <div>
       <div className="container-fluid banner p-0">
       <picture>
@@ -27,5 +31,6 @@ export default function Realisations() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -1,12 +1,18 @@
 import React, { useEffect } from "react";
-import "./home.css";
+import "../Styles/home.css";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
-  useEffect(() => {
-      document.title = "John Doe - Accueil"
-  },[])
+   
+  
   return (
     <>
+    <Helmet>
+        <title>Accueil, John Doe</title>
+        <meta name="description" content="Bienvenue sur le site de John Doe, Developpeur Web." />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      
   <section className="home-container position-relative text-white text-center d-flex justify-content-center align-items-center">
     <picture className="position-absolute top-0 start-0 w-100 h-100 z-0">
       <source srcSet="/hero-bg.jpg" media="(min-width: 992px)" />
@@ -33,7 +39,7 @@ const Home = () => {
               dans le domaine du <strong>développement web</strong>.
             </p>
             <p className="fs-5">
-              Basé à Lyon, je suis en recherche d'une alternance, au sein d'une agnence digitale
+              Basé à Lyon, je suis en recherche d'une alternance, au sein d'une agence digitale
               pour consolider ma formation de <strong>dévelopeur web fullstack</strong>
             </p>
             <p className="fs-5">

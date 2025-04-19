@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./footer.css";
+import "../Styles/footer.css";
 
 const Footer = () => {
+
+//Lien de retour en haut de page
+const [showBackToTop, setShowBackToTop] = useState(false);
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      setShowBackToTop(true);
+    } else {
+      setShowBackToTop(false);
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+
   return (
     <footer className="footer d-flex flex-column bg-light">
       <div className="container py-5">
@@ -64,9 +82,8 @@ const Footer = () => {
       </div>
       <div className="container-fluid bg-dark text-white d-flex justify-content-center align-items-center py-3">
         <p className="mb-0">© Designed by John Doe</p>
-        <a href="#top" className="ms-3 text-white" id="backToTop" style={{ display: "none" }}>
-          Haut de page
-        </a>
+        {showBackToTop && (
+        <a href="#top" className="ms-3 text-white text-hover-color">Haut de page</a>)}
       </div>
     </footer>
   );

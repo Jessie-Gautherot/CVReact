@@ -18,6 +18,9 @@ const GitHubProfile = () => {
       });
   }, []);
 
+  if (loading) return <p className="text-center py-5">Chargement du profil...</p>;
+  if (!profile) return <p className="text-center text-danger py-5">Erreur de chargement.</p>;
+
   return (
     <div className="container-fluid d-flex justify-content-center align-items-center py-5">
       <div className="d-flex flex-column align-items-center" style={{ maxWidth: "800px", width: "100%" }}>

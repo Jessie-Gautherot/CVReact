@@ -1,13 +1,18 @@
 import React, { useEffect } from "react";
 import BlogCard from "../Components/BlogCard";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
-  useEffect(() => {
-    document.title = "John Doe - Mon blog"
-},[])
-
-
   return (
+    <>
+
+  <Helmet>
+      <title>Mon blog, John Doe</title>
+      <meta name="description" content="Découvrez mes derniers articles de blog sur le developpement web." />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
+
+
     <div>
       <div className="container-fluid banner p-0">
       <picture>
@@ -28,6 +33,7 @@ export default function Blog() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

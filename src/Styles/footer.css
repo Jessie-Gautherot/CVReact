@@ -20,6 +20,14 @@ a:hover {
   color: #444;
 }
 
+footer .container-fluid a {
+  color: #fff; 
+}
+
+footer .container-fluid a:hover {
+  background-color:  #298eff ; 
+}
+
 
 
 
