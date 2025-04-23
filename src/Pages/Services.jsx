@@ -8,11 +8,12 @@ export default function Services() {
   
   return (
     <>
-    <Helmet>
+  <Helmet>
     <title>Mes services, John Doe</title>
     <meta name="description" content="Découvrez mes Services en developpement web." />
     <meta name="robots" content="index, follow" />
   </Helmet>
+  
     <div>
       <div className="container-fluid banner p-0">
       <picture>

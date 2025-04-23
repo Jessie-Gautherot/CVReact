@@ -20,7 +20,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
         <Route path="legalnotice" element={<LegalNotice />} />
-        <Route path="/github-profile" element={<GitHubProfile />} />
+        <Route path="github-profile" element={<GitHubProfile />} />
       </Route>
     </Routes>
   );

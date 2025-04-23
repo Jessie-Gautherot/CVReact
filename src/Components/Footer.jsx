@@ -22,7 +22,7 @@ useEffect(() => {
 
 
   return (
-    <footer className="footer d-flex flex-column bg-light">
+    <footer className="footer d-flex flex-column">
       <div className="container py-5">
         <div className="row">
           {/* Colonne 1 */}
@@ -34,13 +34,13 @@ useEffect(() => {
               <p className="d-block mb-2">Téléphone : 06 20 30 40 50</p>
             </div>
             <div className="social-links">
-              <a href="https://github.com/JohnDoe" target="_blank" rel="nofollow noreferrer">
+              <a href="https://github.com/JohnDoe" target="_blank" rel="nofollow noreferrer" aria-label="Visiter le profil GitHub de John Doe">
                 <i className="fab fa-github fa-2x text-dark ms-3"></i>
               </a>
-              <a href="https://twitter.com/JohnDoe" target="_blank" rel="nofollow noreferrer">
+              <a href="https://twitter.com/JohnDoe" target="_blank" rel="nofollow noreferrer"aria-label="Visiter le profil Twitter de John Doe">
                 <i className="fab fa-twitter fa-2x text-dark ms-3"></i>
               </a>
-              <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="nofollow noreferrer">
+              <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="nofollow noreferrer"aria-label="Visiter le profil LinkedIn de John Doe">
                 <i className="fab fa-linkedin fa-2x text-dark ms-3"></i>
               </a>
             </div>

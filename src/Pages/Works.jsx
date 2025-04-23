@@ -7,10 +7,11 @@ export default function Realisations() {
   return (
     <>
     <Helmet>
-        <title>Mes réalisations, John Doe</title>
-        <meta name="description" content="Découvrez les réalisations de John Doe, developpeur web." />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+      <title>Mes réalisations, John Doe</title>
+      <meta name="description" content="Découvrez les réalisations de John Doe, developpeur web." />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
+
     <div>
       <div className="container-fluid banner p-0">
       <picture>
@@ -25,7 +26,6 @@ export default function Realisations() {
           <p>Voici quelques-unes de mes réalisations</p>
           <div className="border-bottom border-primary w-25 m-auto border-3 mb-5"></div>
         </div>
-
         <div className="my-3 mb-5">
           <RealisationsCard />
         </div>

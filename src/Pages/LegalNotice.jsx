@@ -5,17 +5,16 @@ import { Helmet } from "react-helmet";
 export default function LegalNotice() {
   return (
     <>
-     <Helmet>
-        <title>Mentions Légales, John Doe</title>
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet> 
+  <Helmet>
+    <title>Mentions Légales, John Doe</title>
+    <meta name="robots" content="noindex, nofollow" />
+  </Helmet> 
 
       <div className="container mt-3">
         <div className="text-center">
           <h2 className="text-uppercase">Mentions légales</h2>
           <div className="border-bottom w-25 m-auto border-4 border-primary"></div>
         </div>
-
         <div className="accordion my-5 rounded">
           {/* Accordéon editeur */}
           <div className="accordion-item">
@@ -44,7 +43,6 @@ export default function LegalNotice() {
               </div>
             </div>
           </div>
-
           {/* Hébergeur */}
           <div className="accordion-item">
             <h2 className="accordion-header">
@@ -67,7 +65,6 @@ export default function LegalNotice() {
               </div>
             </div>
           </div>
-
           {/* Crédits */}
           <div className="accordion-item">
             <h2 className="accordion-header">

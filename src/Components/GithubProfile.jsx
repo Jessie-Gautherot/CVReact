@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 
 const GitHubProfile = () => {
@@ -22,6 +23,12 @@ const GitHubProfile = () => {
   if (!profile) return <p className="text-center text-danger py-5">Erreur de chargement.</p>;
 
   return (
+    <>
+    <Helmet>
+      <title>Profile Github, John Doe</title>
+      <meta name="description" content="Profil Github de John Doe, developpeur web" />
+      <meta name="robots" content="noindex, nofollow" />
+    </Helmet> 
     <div className="container-fluid d-flex justify-content-center align-items-center py-5">
       <div className="d-flex flex-column align-items-center" style={{ maxWidth: "800px", width: "100%" }}>
         <h1>Github User</h1>
@@ -35,6 +42,7 @@ const GitHubProfile = () => {
         <p>URL repositories : <a href={profile.repos_url}>{profile.repos_url}</a></p>
       </div>
     </div>
+    </>
   );
 };
 

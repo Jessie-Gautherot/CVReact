@@ -7,10 +7,10 @@ export default function Blog() {
     <>
 
   <Helmet>
-      <title>Mon blog, John Doe</title>
-      <meta name="description" content="Découvrez mes derniers articles de blog sur le developpement web." />
-      <meta name="robots" content="index, follow" />
-    </Helmet>
+    <title>Mon blog, John Doe</title>
+    <meta name="description" content="Découvrez mes derniers articles de blog sur le developpement web." />
+    <meta name="robots" content="index, follow" />
+  </Helmet>
 
 
     <div>
@@ -27,7 +27,6 @@ export default function Blog() {
           <p>Retrouvez ici quelques articles sur le développement web.</p>
           <div className="border-bottom border-primary w-25 m-auto border-4 mb-5"></div>
         </div>
-
         <div className="my-3 mb-5">
           <BlogCard />
         </div>
