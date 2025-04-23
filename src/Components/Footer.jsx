@@ -1,9 +1,28 @@
-import React from "react";
-import "./footer.css";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "../Styles/footer.css";
 
 const Footer = () => {
+
+//Lien de retour en haut de page
+const [showBackToTop, setShowBackToTop] = useState(false);
+useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      setShowBackToTop(true);
+    } else {
+      setShowBackToTop(false);
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+
   return (
-    <footer className="footer bg-eee d-flex flex-column ">
+    <footer className="footer d-flex flex-column">
       <div className="container py-5">
         <div className="row">
           {/* Colonne 1 */}
@@ -15,14 +34,14 @@ const Footer = () => {
               <p className="d-block mb-2">Téléphone : 06 20 30 40 50</p>
             </div>
             <div className="social-links">
-              <a href="https://github.com/JohnDoe" target="_blank" rel="nofollow noreferrer">
-                <i className="fab fa-github fa-2x"></i>
+              <a href="https://github.com/JohnDoe" target="_blank" rel="nofollow noreferrer" aria-label="Visiter le profil GitHub de John Doe">
+                <i className="fab fa-github fa-2x text-dark ms-3"></i>
               </a>
-              <a href="https://twitter.com/JohnDoe" target="_blank" rel="nofollow noreferrer">
-                <i className="fab fa-twitter fa-2x"></i>
+              <a href="https://twitter.com/JohnDoe" target="_blank" rel="nofollow noreferrer"aria-label="Visiter le profil Twitter de John Doe">
+                <i className="fab fa-twitter fa-2x text-dark ms-3"></i>
               </a>
-              <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="nofollow noreferrer">
-                <i className="fab fa-linkedin fa-2x"></i>
+              <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="nofollow noreferrer"aria-label="Visiter le profil LinkedIn de John Doe">
+                <i className="fab fa-linkedin fa-2x text-dark ms-3"></i>
               </a>
             </div>
           </div>
@@ -31,11 +50,12 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <h5>Liens utiles</h5>
             <ul className="list-unstyled">
-              <li><a href="/">Accueil</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Me contacter</a></li>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="/LegalNotice">Mentions Légales</a></li>
+              <li><Link to="/">Accueil</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/contact">Me contacter</Link></li>
+              <li><Link to="#about">À propos</Link></li>
+              <li><Link to="/LegalNotice">Mentions Légales</Link></li>
+              <li><Link to="/github-profile">Profil GitHub</Link></li> {/* profile Githug ajouté ici */}
             </ul>
           </div>
 
@@ -43,9 +63,9 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <h5>Mes dernières réalisations</h5>
             <ul className="list-unstyled">
-              <li><a href="/works">Fresh Food</a></li>
-              <li><a href="/works">Restaurant Akira</a></li>
-              <li><a href="/works">Espace bien-être</a></li>
+              <li><Link to="/works">Fresh Food</Link></li>
+              <li><Link to="/works">Restaurant Akira</Link></li>
+              <li><Link to="/works">Espace bien-être</Link></li>
             </ul>
           </div>
 
@@ -53,21 +73,21 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <h5>Mes derniers articles</h5>
             <ul className="list-unstyled">
-              <li><a href="/blog">Coder son site en HTML/CSS</a></li>
-              <li><a href="/blog">Vendre ses produits sur le web</a></li>
-              <li><a href="/blog">Se positionner sur Google</a></li>
+              <li><Link to="/blog">Coder son site en HTML/CSS</Link></li>
+              <li><Link to="/blog">Vendre ses produits sur le web</Link></li>
+              <li><Link to="/blog">Se positionner sur Google</Link></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="container-fluid bg-dark text-white d-flex justify-content-center align-items-center py-3">
         <p className="mb-0">© Designed by John Doe</p>
-        <a href="#top" className="back-to-top" id="backToTop" style={{ display: "none" }}>
-          Haut de page
-        </a>
+        {showBackToTop && (
+        <a href="#top" className="ms-3 text-white text-hover-color">Haut de page</a>)}
       </div>
     </footer>
   );
 };
 
 export default Footer;
+

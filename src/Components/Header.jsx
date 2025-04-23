@@ -1,28 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./header.css"
+import "../Styles/header.css"
 
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <nav className="navbar navbar-expand-lg navbar-dark navbar-custom " aria-label="Navigation principale">
         <div className="container">
           <NavLink className="navbar-brand text-uppercase" to="/">
             John Doe
           </NavLink>
 
-          {/* Hamburger Menu */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarContent"
-            aria-controls="navbarContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i className="fas fa-bars"></i> {/* Icône burger */}
-            </button>
+          {/* Menu Hamburger */}
+          <button className="navbar-toggler"type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i className="fas fa-bars"></i>
+          </button>
 
           {/* Liens de navigation */}
           <div className="collapse navbar-collapse justify-content-end" id="navbarContent">

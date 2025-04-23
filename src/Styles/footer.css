@@ -1,0 +1,38 @@
+.footer {
+  padding-bottom: 15px;
+  background-color: #d8dce27a;
+}
+
+.list-unstyled a::before  {
+  font-family: "Font Awesome 6 Free";
+  content: "\f054";
+  font-weight: 600; 
+  color: #0d6efd;
+  margin-right: 3px;
+}
+
+.list-unstyled a {
+  text-decoration: none;
+  color: #444;
+  padding-left: 10px;
+}
+
+a:hover {
+  color: #444;
+}
+
+footer .container-fluid a {
+  color: #fff; 
+}
+
+footer .container-fluid a:hover {
+  background-color:  #298eff ; 
+}
+
+
+
+
+
+
+
+

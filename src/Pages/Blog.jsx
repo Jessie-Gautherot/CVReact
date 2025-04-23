@@ -1,16 +1,17 @@
 import React, { useEffect } from "react";
-import RealisationsCard from "../Components/RealisationsCard";
+import BlogCard from "../Components/BlogCard";
 import { Helmet } from "react-helmet";
 
-export default function Realisations() {
-  
+export default function Blog() {
   return (
     <>
-    <Helmet>
-      <title>Mes réalisations, John Doe</title>
-      <meta name="description" content="Découvrez les réalisations de John Doe, developpeur web." />
-      <meta name="robots" content="index, follow" />
-    </Helmet>
+
+  <Helmet>
+    <title>Mon blog, John Doe</title>
+    <meta name="description" content="Découvrez mes derniers articles de blog sur le developpement web." />
+    <meta name="robots" content="index, follow" />
+  </Helmet>
+
 
     <div>
       <div className="container-fluid banner p-0">
@@ -22,15 +23,16 @@ export default function Realisations() {
       </div>
       <div className="container mt-5">
         <div className="text-center">
-          <h2 className="text-uppercase">Portfolio</h2>
-          <p>Voici quelques-unes de mes réalisations</p>
-          <div className="border-bottom border-primary w-25 m-auto border-3 mb-5"></div>
+          <h2 className="text-uppercase">blog</h2>
+          <p>Retrouvez ici quelques articles sur le développement web.</p>
+          <div className="border-bottom border-primary w-25 m-auto border-4 mb-5"></div>
         </div>
         <div className="my-3 mb-5">
-          <RealisationsCard />
+          <BlogCard />
         </div>
       </div>
     </div>
     </>
   );
 }
+
